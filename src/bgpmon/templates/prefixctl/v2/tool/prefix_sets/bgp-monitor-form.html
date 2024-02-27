@@ -1,0 +1,23 @@
+{% load static i18n %}
+<form data-template="form_bgp_monitor"
+  data-api-base="{% url "prefixctl_api:monitor-list" org_tag=request.org.slug %}"
+  data-api-method="POST"
+  >
+
+  <!--
+    this only exists so we can display validation errors keyed
+    to the prefix set
+  -->
+  <input type="hidden" id="prefix_set" name="prefix_set" />
+
+  <div data-api-submit="yes" style="margin-top:10px">
+    <input type="hidden" name="monitor_type" value="bgp_monitor" />
+  </div>
+
+  <div class="row form-group">
+    <div class="col-12" data-api-submit="yes">
+      <label for="email">{% trans "Notification email" %}</label>
+      <input type="text" class="form-control" id="email" name="email" />
+    </div>
+  </div>
+</form>
