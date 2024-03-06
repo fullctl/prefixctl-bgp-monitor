@@ -1,0 +1,22 @@
+{% load i18n %}
+<table class="table" data-template="bgp_monitor_report" data-api-base="{% url "prefixctl_api:bgp_monitor/report-detail" org_tag=request.org.slug pk="monitor_pk" %}">
+
+    <thead>
+        <tr>
+            <th scope="col">{% trans "Prefix" %}</th>
+            <th scope="col">{% trans "Type" %}</th>
+            <th scope="col">{% trans "ASN" %}</th>
+        </tr>
+    </thead>
+
+    <tbody class="list-body"></tbody>
+
+    </tbody>
+    <tbody class="templates">
+        <tr data-template="row">
+            <td data-field="prefix" class="highlight"></td>
+            <td data-field="type"></td>
+            <td data-field="asn"></td>
+        </tr>
+    </tbody>
+</table>

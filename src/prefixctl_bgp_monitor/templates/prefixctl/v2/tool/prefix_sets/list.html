@@ -8,6 +8,19 @@
     {% trans "BGP Monitor" %}: <span class="highlight" data-field="status"></span>
   </div>
   <div class="col field">
+    <a class="button" data-action="view_report">
+      <div class="row">
+        <div class="col-auto pe-0">
+          <span class="icon prefixctl icon-report"></span>
+        </div>
+        <div class="col ps-0">
+          <span class="label prefixctl btn-announcements">{% trans "Report" %}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col field">
+    {% trans "Notification email" %}: <span class="highlight" data-field="email"></span>
   </div>
   <div class="col-1 field-empty right">
      <a data-action="edit_prefix_monitor"><span class="icon prefixctl icon-edit"></span></a>
