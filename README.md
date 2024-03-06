@@ -1,6 +1,10 @@
-# prefixctl-bgp-monitor
+# PrefixCtl BGP Monitor
 
 PrefixCtl addon that monitors the DFZ for other ASNs advertising your prefixes
+
+## Credit
+
+This project was initially funded by a Community Grant from the American Registery for Internet Numbers (ARIN). Read more, here: [https://www.fullctl.com/blog/ARINgrant2023](https://www.fullctl.com/blog/ARINgrant2023).
 
 ## License
 
